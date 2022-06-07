@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mental Health</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</head>
+<div class="text-center">
+    <h1 class="h1">Mental Health Questionnaire Results</h1>
+    <p>Easy to fill mental health questionnaire. Does not take any responsibility for the results.</p>
+</div>
+<body class="text-center">
+    <p>
+        <% if(result > 25) { %>
+            You seem without hesitance really happy. There's a joke for you hidden in the console.
+            <% jokes.getRandomDadJoke(function (joke) {%>
+                <%= console.log(joke) %>
+             <% }) %>
+        <% } %> 
+        <% if(result < 25 && result >= 18) {%> 
+            You seem happy from time to time
+        <% } %> 
+        <% if(result < 18 && result >= 10) {%> 
+            Did something happen? You should talk to somebody
+        <% } %> 
+        <% if(result < 10) {%> 
+            Just in case, there are people who are always there for you, do not miss this opportunity.
+        <% } %> 
+    </p> 
+    <script type="module" src="app.js"></script>
+</body>

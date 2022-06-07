@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mental Health</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</head>
+<div class="text-center">
+    <h1 class="h1">Mental Health Questionnaire</h1>
+    <p>Easy to fill mental health questionnaire. Does not take any responsibility for the results.</p>
+</div>
+<body class="text-center">
+    <form action="/result" method="post">
+        <div>
+            <label for="firstRange">Would you feel offended if a best friend insulted you personally?</label>
+            <br>
+            <label for="firstRange">not at all</label>
+            <input type="range" name="firstRange" id="firstRange" min="1" max="6" step="1" value="3">
+            <label for="firstRange">much indeed</label>
+        </div>
+        <div>
+            <label for="secondRange">Have you been feeling anxious recently?</label>
+            <br>
+            <label for="secondRange">not at all</label>
+            <input type="range" name="secondRange" id="secondRange" min="1" max="6" step="1" value="3">
+            <label for="secondRange">much indeed</label>
+        </div>
+        <div>
+            <label for="thirdRange">Do activities that have interested you in the past still interest you?</label>
+            <br>
+            <label for="thirdRange">not at all</label>
+            <input type="range" name="thirdRange" id="thirdRange" min="1" max="6" step="1" value="3">
+            <label for="thirdRange">much indeed</label>
+        </div>
+        <div>
+            <label for="fourthRange">Have you been happy last week?</label>
+            <br>
+            <label for="fourthRange">not at all</label>
+            <input type="range" name="fourthRange" id="fourthRange" min="1" max="6" step="1" value="3">
+            <label for="fourthRange">much indeed</label>
+        </div>
+        <div>
+            <label for="fifthRange">Do you have trouble sleeping?</label>
+            <br>
+            <label for="fifthRange">not at all</label>
+            <input type="range" name="fifthRange" id="fifthRange" min="1" max="6" step="1" value="3">
+            <label for="fifthRange">much indeed</label>
+        </div>
+        <button id="check">Check your results</button>
+    </form>
+    <script type="module" src="app.js"></script>
+</body>
